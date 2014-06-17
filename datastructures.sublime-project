@@ -1,0 +1,14 @@
+{
+  "settings":
+    {
+        "trim_automatic_white_space": true,
+        "translate_tabs_to_spaces": false,
+        "tab_size": 4
+    },
+	"folders":
+	[
+		{
+			"path": "/Users/connor/Developer/C++/datastructures"
+		}
+	]
+}
