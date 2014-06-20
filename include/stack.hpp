@@ -41,4 +41,4 @@ public:
 	}
 };
 
-#endif
+#endif // _STACK_HPP_

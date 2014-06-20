@@ -40,4 +40,4 @@ public:
 	T back() { return storage.back(); }
 };
 
-#endif
+#endif // _QUEUE_HPP_
