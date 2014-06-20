@@ -42,8 +42,7 @@ public:
 	// Add value to the head of the linked list.
 	void prepend( T value )
 	{
-		LinkedListNode<T>* node = new LinkedListNode<T>();
-		node->data = value;
+		LinkedListNode<T>* node = new LinkedListNode<T>( value );
 		node->next = head;
 		head = node;
 	}
@@ -51,7 +50,7 @@ public:
 	// Add value to the end of the linked list.
 	void append( T value )
 	{
-		LinkedListNode<T>* tmp = new LinkedListNode<T>();
+		LinkedListNode<T>* tmp = new LinkedListNode<T>( value );
 		if( empty() ) {
 			prepend( value );
 		} else {
@@ -60,7 +59,6 @@ public:
 				node = node->next;
 			}
 			node->next = tmp;
-			tmp->data = value;
 		}
 	}
 
@@ -69,14 +67,13 @@ public:
 	void insertAt( T value, unsigned int index )
 	{
 		LinkedListNode<T>* node = head;
-		LinkedListNode<T>* tmp  = new LinkedListNode<T>;
+		LinkedListNode<T>* tmp  = new LinkedListNode<T>( value );
 		while( index > 1 && node->next != nullptr ) {
 			node = node->next;
 			--index;
 		}
 		tmp->next = node->next;
 		node->next = tmp;
-		tmp->data = value;
 	}
 
 	// Remove the node at the head of the list.
