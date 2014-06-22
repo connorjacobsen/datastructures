@@ -1,10 +1,7 @@
 #ifndef _LINKED_LIST_HPP_
 #define _LINKED_LIST_HPP_
 
-#ifndef _LINKED_LIST_NODE_HPP
-#define _LINKED_LIST_NODE_HPP
 #include "linked_list_node.hpp"
-#endif // _LINKED_LIST_NODE_HPP
 
 template <typename T>
 class LinkedList
